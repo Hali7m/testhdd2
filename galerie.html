@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarl Haddad</title>
+    <meta name="description" content="Sarl Haddad - Experts en télécommunications et construction. Découvrez nos services depuis 2011 à Alger.">
+    <meta name="keywords" content="télécommunications, construction, réseaux GSM, maintenance, réparation, Alger">
+    <meta name="author" content="Sarl Haddad">
+    <title>Galerie - Sarl Haddad</title>
     <!--vendor css ================================================== -->
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!--Bootstrap ================================================== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <!-- Style Sheet ================================================== -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Google Fonts ================================================== -->
@@ -20,195 +22,218 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- script ================================================== -->
     <script src="js/modernizr.js"></script>
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
-
-
-    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed ">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase px-3"  href="index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase active px-3" href="galerie.html">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
-                        <ul class="navbar-nav justify-content-end align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link px-3 phone-no" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z"
-                                            fill="#313131" />
-                                    </svg>
-                                    (+487) 384 9452
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <section id="hero" class="position-relative overflow-hidden py-4" style="background: url('images/banner-img.png'); background-size: cover; background-position: center;">
-        <div class="overlay"></div>
-        <div class="container py-5 mt-5">
-          <div class="row align-items-center py-5 mt-5">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <h6 class="text">EXPERTS EN TÉLÉCOMMUNICATIONS</h6>
-              <h2 class="text-white fw-bold display-2">Votre partenaire pour des solutions en télécommunications</h2>
-              <p class="text-white">Créée en 2011, notre entreprise a acquis une expérience significative dans le domaine des télécommunications et de la construction. Nous mettons à votre disposition une équipe compétente et des équipements modernes pour relever tous vos défis.</p>
-              <ul class="list-unstyled">
-                <li class="text-white fw-bold">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                    <g clip-path="url(#clip0_1_359)">
-                      <path d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1_359">
-                        <rect width="23" height="23" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg> Entièrement légale, agréée et assurée
-                </li>
-                <li class="text-white fw-bold">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                    <g clip-path="url(#clip0_1_359)">
-                      <path d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1_359">
-                        <rect width="23" height="23" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg> Entreprise fiable à 100%
-                </li>
-                <li class="text-white fw-bold">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                    <g clip-path="url(#clip0_1_359)">
-                      <path d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1_359">
-                        <rect width="23" height="23" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg> Entreprise authentique et compétente
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 sticky-top position-fixed ">
+      <div class="container">
+        <h1 class="fw-bold">Sarl haddad</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  px-3" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  px-3" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase active px-3" href="galerie.html">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  px-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
+              <ul class="navbar-nav justify-content-end align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link px-3 phone-no" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z" fill="#313131" />
+                    </svg> (+213) 023 958 610 </a>
                 </li>
               </ul>
             </div>
-            <div class="col-md-6 text-center">
-              <img src="images/banner-img.png" alt="Entreprise Sarl Haddad" class="img-fluid">
-            </div>
           </div>
         </div>
-      </section>
-      
-      <section id="services" class="py-4">
+      </div>
+    </nav>
+
+
+    <div class="container py-5 mt-5">
+      <h2 class="fw-bold display-4 text-center mb-4">Notre Galerie</h2>
+      <p class="text-center text-muted mb-5">Explorez nos réalisations dans les domaines des télécommunications, de la construction et des projets industriels.</p>
+            <div class="row">
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project2.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project5.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project3.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project5.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project4.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+              <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+          </a>
+          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+        </a>
+        <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project2.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project5.jpg" alt="random img" class="img-fluid">
+        </a>
+        <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project3.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+        </a>
+        <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project5.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project4.jpg" alt="random img" class="img-fluid">
+        </a>
+        <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+        </a>
+        <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+            <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+        </a>          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+      </a>
+      <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project2.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project5.jpg" alt="random img" class="img-fluid">
+      </a>
+      <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project3.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+      </a>
+      <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project5.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project4.jpg" alt="random img" class="img-fluid">
+      </a>
+      <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+      </a>
+      <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+          <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+      </a>          <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+    </a>
+    <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project2.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project5.jpg" alt="random img" class="img-fluid">
+    </a>
+    <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project3.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project3.jpg" alt="random img" class="img-fluid">
+    </a>
+    <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project5.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project4.jpg" alt="random img" class="img-fluid">
+    </a>
+    <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+    </a>
+    <a class="col-md-12 col-lg-4 img-fluid py-2" href="/assets/project1.jpg" data-toggle="lightbox" data-gallery="photo_gallery">
+        <img src="assets/project1.jpg" alt="random img" class="img-fluid">
+    </a>
+      </div>
+  </div>
+    <section id="footer">
+        <div class="container footer-container mt-5 pt-3">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5">
+            <div class="col-md-4 mt-5 mt-md-0">
+              <img src="images/main-logo.png" alt="logo" class="my-3">
+              <p class="">Notre entreprise, implantée à Alger, est spécialisée dans le secteur des travaux de télécommunications. Depuis sa création en 2011.</p>
+              <div class="d-flex align-items-center">
+                <a href="#" target="_blank">
+                  <iconify-icon class="social-link-icon active pe-4" icon="mdi:facebook"></iconify-icon>
+                </a>
+                <a href="#" target="_blank">
+                  <iconify-icon class="social-link-icon pe-4" icon="mdi:instagram"></iconify-icon>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 offset-md-1">
+              <h5 class="py-3">Nos Services</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Installation de réseaux GSM </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Maintenance et réparation </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Construction d'infrastructures télécom </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Consultation et expertise </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h5 class="py-3">Liens Rapides</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Nos localisations </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> À propos de nous </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Notre galerie </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Politique de confidentialité </a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link fw-normal p-0"> Contactez-nous </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5 class="py-3">Infos Contact</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item d-flex mb-3">
+                  <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+                  <a href="#" class="nav-link p-0"> Cité Si Haouas N°A6,Ain Taya,Alger,Algérie </a>
+                </li>
+                <li class="nav-item d-flex mb-3">
+                  <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon>
+                  <a href="#" class="nav-link p-0"> (+213) 0770 277 333 </a>
+                </li>
+                <li class="nav-item d-flex mb-3">
+                    <iconify-icon class="contact-icon pe-3" icon="mdi:fax"></iconify-icon>
+                    <a href="#" class="nav-link p-0"> (+213) 023 958 610 </a>
+                  </li>
+                <li class="nav-item d-flex mb-3">
+                  <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon>
+                  <a href="#" class="nav-link p-0"> shaddad@sarlhaddad.com </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center mb-5">
-              <h2 class="display-4">Nos Services</h2>
-              <p class="lead">Découvrez nos prestations spécialisées en télécommunications et en construction.</p>
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+            <div class="col-md-6 d-flex align-items-center">
+              <p>© 2024 Sarl Haddad - Tous droits réservés</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="service-box">
-                <img src="images/service1.jpg" alt="Service 1" class="img-fluid mb-3">
-                <h4>Installation de réseaux GSM</h4>
-                <p>Nous installons et entretenons des réseaux GSM avec une expertise de pointe.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="service-box">
-                <img src="images/service2.jpg" alt="Service 2" class="img-fluid mb-3">
-                <h4>Construction d'infrastructures télécom</h4>
-                <p>Nos équipes expérimentées réalisent vos projets d'infrastructures télécom de A à Z.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="service-box">
-                <img src="images/service3.jpg" alt="Service 3" class="img-fluid mb-3">
-                <h4>Maintenance et réparation</h4>
-                <p>Nous assurons la maintenance et la réparation de vos équipements de télécommunications.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="service-box">
-                <img src="images/service4.jpg" alt="Service 4" class="img-fluid mb-3">
-                <h4>Consultation et expertise</h4>
-                <p>Profitez de nos conseils et de notre expertise pour vos projets télécoms et constructions.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-              </div>
-            </div>
-          </div>
+          </footer>
         </div>
       </section>
       
-      <section id="about" class="bg-light py-4">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <h2 class="display-4">À propos de Sarl Haddad</h2>
-              <p>Implantée à Alger, Sarl Haddad est spécialisée dans les travaux de télécommunications et de construction. Depuis sa création en 2011, l'entreprise a su se doter d'une équipe compétente et expérimentée et de moyens matériels conséquents pour relever tous les défis de ses clients.</p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="images/about-us.jpg" alt="About Us" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section id="contact" class="py-4">
-        <div class="container text-center">
-          <h2 class="display-4">Contactez-nous</h2>
-          <p>Pour toute demande de renseignements ou de devis, n'hésitez pas à nous contacter.</p>
-          <a href="contact.html" class="btn btn-primary">Contactez-nous</a>
-        </div>
-      </section>
-      
-      <section id="map" class="py-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3>Notre Localisation</h3>
-              <p>Nous sommes situés à Alger, prête à relever vos défis de télécommunications et construction.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <iframe src="https://www.google.com/maps/embed?pb=...your-google-map-embed-code..." width="100%" height="450" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" allowfullscreen=""></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  </body>
+</html>
