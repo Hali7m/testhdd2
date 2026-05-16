@@ -1,341 +1,977 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sarl Haddad - Experts en télécommunications et construction. Découvrez nos services depuis 2011 à Alger.">
-    <meta name="keywords" content="télécommunications, construction, réseaux GSM, maintenance, réparation, Alger">
-    <meta name="author" content="Sarl Haddad">
-    <title>Sarl Haddad</title>
-    <!--vendor css ================================================== -->
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <!--Bootstrap ================================================== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <!-- Style Sheet ================================================== -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Google Fonts ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- script ================================================== -->
-    <script src="js/modernizr.js"></script>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed shadow">
-      <div class="container">
-        <h1 class="fw-bold">Sarl haddad</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase  active px-3" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase  px-3" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase  px-3" href="galerie.html">Galerie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase  px-3" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
-              <ul class="navbar-nav justify-content-end align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link px-3 phone-no" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z" fill="#313131" />
-                    </svg> (+213) 023 958 610 </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <section id="hero" class="position-relative overflow-hidden py-4" style="background: url('images/banner-img.png'); background-size: cover; background-position: center;">
-      <div class="overlay"></div>
-      <div class="container py-5 mt-5">
-        <div class="row align-items-center py-5 mt-5">
-          <div class="col-md-6 mb-5 mb-md-0">
-            <h6 class="text">EXPERTS EN TÉLÉCOMMUNICATIONS</h6>
-            <h2 class="text-white fw-bold display-2">EXPERTS EN TÉLÉCOMMUNICATIONS Votre partenaire pour des solutions en télécommunications</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="my-5 pt-5">
-        <div class="container pt-5">
-          <h6 class="text-center">Nos Services</h6>
-          <h2 class="fw-bold display-4 mb-4">Découvrez nos prestations spécialisées en télécommunications et en construction.</h2>
-          <div class="row">
-            <div class="mt-4 col-md-6 col-lg-3">
-              <div class="services-components text-center py-4 px-3 d-flex flex-column align-items-center h-100">
-                <iconify-icon class="services-icon my-3" icon="mdi:antenna" style="font-size: 50px;"></iconify-icon>
-                <h5 class="services-heading mb-3">Installation de réseaux GSM</h5>
-                <p>Nous installons et entretenons des réseaux GSM avec une expertise de pointe.</p>
-                <a href="services.html" class="btn btn-primary service-btn mt-3">En savoir plus</a>
-              </div>
-            </div>
-      
-            <div class="mt-4 col-md-6 col-lg-3">
-              <div class="services-components text-center py-4 px-3 d-flex flex-column align-items-center h-100">
-                <iconify-icon class="services-icon my-3" icon="mdi:construction" style="font-size: 50px;"></iconify-icon>
-                <h5 class="services-heading mb-3">Construction d'infrastructures télécom</h5>
-                <p>Nos équipes expérimentées réalisent vos projets d'infrastructures télécom.</p>
-                <a href="services.html" class="btn btn-primary service-btn mt-3">En savoir plus</a>
-              </div>
-            </div>
-      
-            <div class="mt-4 col-md-6 col-lg-3">
-              <div class="services-components text-center py-4 px-3 d-flex flex-column align-items-center h-100">
-                <iconify-icon class="services-icon my-3" icon="mdi:tools" style="font-size: 50px;"></iconify-icon>
-                <h5 class="services-heading mb-3">Maintenance et réparation</h5>
-                <p>La maintenance et la réparation de vos équipements de télécommunications.</p>
-                <a href="services.html" class="btn btn-primary service-btn mt-3">En savoir plus</a>
-              </div>
-            </div>
-      
-            <div class="mt-4 col-md-6 col-lg-3">
-              <div class="services-components text-center py-4 px-3 d-flex flex-column align-items-center h-100">
-                <iconify-icon class="services-icon my-3" icon="mdi:clipboard-check" style="font-size: 50px;"></iconify-icon>
-                <h5 class="services-heading mb-3">Consultation et expertise</h5>
-                <p>Profitez de nos conseils et de notre expertise pour vos projets télécoms et constructions.</p>
-                <a href="services.html" class="btn btn-primary service-btn mt-3">En savoir plus</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    <section id="about">
-      <div class="container py-5">
-        <div class="row align-items-center py-5">
-          <div class=" col-md-6 ps-md-5">
-            <img src="images/about-img.jpg" alt="image" class="img-fluid">
-          </div>
-          <div class="col-md-6 px-4 py-5">
-            <h6 class="">À propos de Sarl Haddad</h6>
-            <h2 class=" fw-bold display-4 mb-3 ">Le Best de telecomunication depuis 2011</h2>
-            <p class="">Implantée à Alger, Sarl Haddad est spécialisée dans les travaux de télécommunications et de construction. Depuis sa création en 2011, l'entreprise a su se doter d'une équipe compétente et expérimentée et de moyens matériels conséquents pour relever tous les défis de ses clients.</p>
-            <a href="#apropos" class="btn btn-primary service-btn mt-3">A propos</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="apropos" class="my-5 py-5">
-        <div class="container">
-          <h6 class="text-uppercase text-center text-muted">À propos</h6>
-          <h2 class="fw-bold display-4 text-center mb-4">Pourquoi choisir Sarl Haddad ?</h2>
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <img src="images/about-img.jpg" alt="Image à propos" class="img-fluid rounded ">
-            </div>
-            <div class="col-md-6">
-              <h3 class="fw-bold mb-3">Une expertise reconnue depuis 2011</h3>
-              <p>
-                Depuis plus d'une décennie, Sarl Haddad s'est imposée comme une référence dans le domaine des télécommunications et de la construction en Algérie. 
-                Avec une équipe dédiée et un savoir-faire éprouvé, nous transformons vos défis en opportunités de succès.
-              </p>
-              <p>
-                Que ce soit pour l'installation de réseaux GSM, la construction d'infrastructures ou la maintenance, notre mission est de fournir des solutions sur mesure, adaptées aux besoins uniques de chaque client.
-              </p>
-              <a href="#contact" class="btn btn-primary mt-3">Contactez-nous</a>
-            </div>
-          </div>
-        </div>
-      </section>      
-    <section id="partners" class="my-5 pt-5">
-        <div class="container text-center">
-          <h6 class="text-uppercase text-muted">Nos Partenaires</h6>
-          <h2 class="fw-bold display-4 mb-4">Ils nous font confiance</h2>
-          <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            </div>
-      
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
-                    <img src="images/Djezzy.png" class="img-fluid mx-auto d-block" alt="Partner 1">
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
-                    <img src="images/ooredoo.png" class="img-fluid mx-auto d-block" alt="Partner 2">
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
-                    <img src="images/mobilis.png" class="img-fluid mx-auto d-block" alt="Partner 3">
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
-                    <img src="images/mdn.png" class="img-fluid mx-auto d-block" alt="Partner 4">
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-2">
-                    <img src="images/sonatrach.png" class="img-fluid mx-auto d-block" alt="Partner 4">
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Carousel controls (Optional) -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      
-      
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EURL CHABAKAT COM — Solutions Télécommunications Clés en Main · Algérie</title>
+<meta name="description" content="EURL CHABAKAT COM, entreprise spécialisée dans la réalisation et l'intégration des systèmes de télécommunication en Algérie depuis 2012.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
 
-    <section id="cta" class="position-relative my-5">
-      <div class="container my-5 py-5">
-        <div class="row align-items-center my-5">
-          <div class="col-md-6 offset-md-2">
-            <h6 class="text-dark">Commencez maintenant</h6>
-            <h2 class="text-dark fw-bold display-4">Pour toute demande de renseignement</h2>
-          </div>
-          <div class="col-md-2">
-            <a href="contact.html" class="btn btn-primary cta-button ">Contactez-Nous</a>
+<!-- ════════════════ NAV ════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <img src="image001.jpg" alt="CHABAKAT COM Logo" class="logo-img">
+    <div class="logo-text">
+      <span class="logo-name">EURL CHABAKAT COM</span>
+      <span class="logo-tagline">Télécommunications · Algérie</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#hero" class="active">Accueil</a></li>
+    <li><a href="#about">À Propos</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#partners">Partenaires</a></li>
+    <li><a href="#gallery">Galerie</a></li>
+    <li><a href="#team">Équipe</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-btn">Contact</a>
+
+  <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <a href="#hero">Accueil</a>
+  <a href="#about">À Propos</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projets</a>
+  <a href="#partners">Partenaires</a>
+  <a href="#gallery">Galerie</a>
+  <a href="#team">Équipe</a>
+  <a href="#contact" class="drawer-cta">Nous Contacter</a>
+</div>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="hero.png" alt="Infrastructure télécom" class="hero-photo">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="eyebrow">
+      <div class="eyebrow-bar"></div>
+      <span class="eyebrow-txt">Fondé en 2012 · Alger · Algérie</span>
+    </div>
+    <h1 class="hero-h1">Solutions<br><em>Télécoms</em><br>Clés en Main</h1>
+    <p class="hero-p">
+      EURL CHABAKAT COM réalise et intègre des systèmes de télécommunication sur l'ensemble du territoire algérien — de la construction de pylônes au déploiement FTTH, en passant par la fibre optique et les faisceaux hertziens.
+    </p>
+    <div class="hero-btns">
+      <a href="#services" class="btn btn-crimson">
+        Nos Services
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2.5 8H13.5M9.5 4L13.5 8L9.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-outline">Demander un Devis</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-n">2012</span>
+      <span class="stat-l">Année de création</span>
+    </div>
+    <div class="stat">
+      <span class="stat-n">31+</span>
+      <span class="stat-l">Experts & Techniciens</span>
+    </div>
+    <div class="stat">
+      <span class="stat-n">10+</span>
+      <span class="stat-l">Projets réalisés</span>
+    </div>
+    <div class="stat">
+      <span class="stat-n">7+</span>
+      <span class="stat-l">Partenaires majeurs</span>
+    </div>
+    <div class="stat">
+      <span class="stat-n">48</span>
+      <span class="stat-l">Wilayas couvertes</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section id="about" class="section-pad bg-white">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-frame fu">
+        <div class="about-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+            alt="Tour de télécommunication"
+            class="about-photo"
+            onerror="this.parentElement.classList.add('about-img-fallback')"
+          >
+          <div class="about-badge">
+            <span class="badge-n">13+</span>
+            <span class="badge-t">Ans d'Expertise</span>
           </div>
         </div>
-        <section id="localisation" class="my-5 py-5">
-            <div class="container">
-              <!-- Section Title -->
-              <div class="row text-center mb-4">
-                <div class="col-12">
-                  <h3 class="fw-bold">Notre Localisation</h3>
-                  <p class="lead">Nous sommes situés à Alger, prêts à relever vos défis de télécommunications et de construction.</p>
-                </div>
-              </div>
-              <!-- Google Map Section -->
-              <div class="row justify-content-center">
-                <!-- Google Map Column (on the left) -->
-                <div class="col-12">
-                  <div class="mapouter">
-                    <div class="gmap_canvas">
-                      <iframe id="gmap_canvas" 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.6065240657142!2d3.290317!3d36.789442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e45006cbf7e4f%3A0x52cf199939f6c2cb!2sSarl%20Haddad!5e0!3m2!1sfr!2sdz!4v1733069929528!5m2!1sfr!2sdz" 
-                        frameborder="0" 
-                        scrolling="no" 
-                        marginheight="0" 
-                        marginwidth="0" 
-                        style="width: 100%; height: 550px; border: none; border-radius: 15px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); transition: all 0.5s ease;">
-                      </iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>    
       </div>
-    </section>
-    <section id="footer">
-        <div class="container footer-container mt-5 pt-3">
-          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5">
-            <div class="col-md-4 mt-5 mt-md-0">
-              <img src="images/main-logo.png" alt="logo" class="my-3">
-              <p class="">Notre entreprise, implantée à Alger, est spécialisée dans le secteur des travaux de télécommunications. Depuis sa création en 2011.</p>
-              <div class="d-flex align-items-center">
-                <a href="#" target="_blank">
-                  <iconify-icon class="social-link-icon active pe-4" icon="mdi:facebook"></iconify-icon>
-                </a>
-                <a href="#" target="_blank">
-                  <iconify-icon class="social-link-icon pe-4" icon="mdi:instagram"></iconify-icon>
-                </a>
+
+      <div class="about-text fu fu-d2">
+        <div class="sec-label"><div class="sec-dot"></div><span class="sec-label-txt">À Propos de Nous</span></div>
+        <h2 class="sec-h2">L'Ingénierie au Cœur de la Connectivité Algérienne</h2>
+        <p class="sec-p" style="margin-top:18px">
+          Créée en 2012 à Alger, EURL CHABAKAT COM joue un rôle essentiel dans la réalisation et l'intégration des systèmes de télécommunication en Algérie. Notre équipe pluridisciplinaire d'ingénieurs et de techniciens spécialisés nous permet de réaliser des projets clés en main de grande envergure.
+        </p>
+        <p class="sec-p" style="margin-top:14px">
+          Nos activités couvrent l'ensemble du cycle de vie d'un projet : Survey, ingénierie, fournitures, installation, mise en service, maintenance et contrôle qualité — pour les opérateurs télécom, équipementiers et collectivités algériennes.
+        </p>
+        <div class="check-list" style="margin-top:28px">
+          <div class="check-item">
+            <div class="check-box"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Réalisation de projets GSM clés en main
+          </div>
+          <div class="check-item">
+            <div class="check-box"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Logistique considérable pour respecter les délais
+          </div>
+          <div class="check-item">
+            <div class="check-box"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Partenariat avec les grands fabricants d'équipements
+          </div>
+          <div class="check-item">
+            <div class="check-box"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Main-d'œuvre qualifiée · Coûts compétitifs
+          </div>
+          <div class="check-item">
+            <div class="check-box"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Promotion de l'emploi des jeunes ingénieurs algériens
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-crimson" style="display:inline-flex;margin-top:32px">
+          Nous Contacter
+          <svg viewBox="0 0 16 16" fill="none"><path d="M2.5 8H13.5M9.5 4L13.5 8L9.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ SERVICES ════════════════ -->
+<section id="services" class="section-pad bg-lightblue">
+  <div class="container">
+    <div class="services-hd fu">
+      <div>
+        <div class="sec-label"><div class="sec-dot"></div><span class="sec-label-txt">Domaines d'Intervention</span></div>
+        <h2 class="sec-h2">Nos Services</h2>
+      </div>
+      <a href="#contact" class="btn btn-royal" style="margin-top:auto">Demander un Devis</a>
+    </div>
+    <div class="services-grid fu fu-d1">
+
+      <div class="svc">
+        <span class="svc-num">01</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M22 6 L22 12 M10 10 L14 14 M34 10 L30 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".5"/>
+          <path d="M18 38 L18 22 L22 8 L26 22 L26 38" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 38 L30 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M16 28 L26 28 M15 33 L29 33" stroke="currentColor" stroke-width="1" opacity=".5" stroke-linecap="round"/>
+          <ellipse cx="22" cy="19" rx="8" ry="5" stroke="currentColor" stroke-width="1" fill="none" opacity=".4"/>
+        </svg>
+        <h3 class="svc-name">GSM — Sites Clés en Main</h3>
+        <p class="svc-desc">Construction complète de sites GSM/4G/5G : pylônes haubanés, autostables, triangulaires et quadrangulaires, terrasses, mise en service incluse.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">02</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <rect x="8" y="14" width="28" height="18" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M14 32 L14 38 M30 32 L30 38" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M10 38 L34 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="22" cy="23" r="4" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <path d="M22 8 L22 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M17 10 Q22 6 27 10" stroke="currentColor" stroke-width="1.2" fill="none" opacity=".5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="svc-name">Swap 2G / 3G / 4G</h3>
+        <p class="svc-desc">Modernisation et migration complète des équipements radio — démantèlement, installation, intégration réseau et optimisation des performances.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">03</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M8 22 Q14 12 22 22 Q30 32 36 22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M8 16 Q14 8 22 16 Q30 24 36 16" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".5"/>
+          <path d="M8 28 Q14 20 22 28 Q30 36 36 28" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".3"/>
+          <circle cx="22" cy="22" r="3" fill="currentColor"/>
+        </svg>
+        <h3 class="svc-name">Transmission Hertzienne</h3>
+        <p class="svc-desc">Déploiement et maintenance de liaisons faisceaux hertziens (microwave) — GSM, Téléphonie Fixe et Fibre Optique pour une connectivité sans faille.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">04</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="18" r="8" stroke="currentColor" stroke-width="1.6" fill="none"/>
+          <path d="M16 24 L10 36 M28 24 L34 36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M8 36 L36 36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M14 18 Q18 12 22 10 Q26 12 30 18" stroke="currentColor" stroke-width="1" fill="none" opacity=".5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="svc-name">Énergie & Shelters</h3>
+        <p class="svc-desc">Solutions énergétiques complètes : énergie solaire, batteries, groupes électrogènes, shelters et ateliers d'énergies pour sites isolés.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">05</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M8 36 L8 20 L22 10 L36 20 L36 36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M16 36 L16 26 L22 24 L28 26 L28 36" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".7"/>
+          <path d="M12 36 L32 36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M8 36 L36 36" stroke="currentColor" stroke-width="1" opacity=".3" stroke-linecap="round"/>
+        </svg>
+        <h3 class="svc-name">Fibre Optique — FTTH / ODN</h3>
+        <p class="svc-desc">Survey, étude, déploiement et canalisation de réseaux fibre optique — FTTH, FTTX et ODN — pour les opérateurs nationaux.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">06</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M12 22 L18 22 L20 16 L24 28 L26 22 L32 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="6" y="10" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M16 38 L28 38 M22 34 L22 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="svc-name">Survey & Études APS/APD</h3>
+        <p class="svc-desc">Acquisition de sites (recherche et négociation), réalisation de surveys de couverture, études APS/APD et ingénierie complète de déploiement.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">07</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <rect x="8" y="30" width="28" height="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M12 30 L12 14 L22 8 L32 14 L32 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M16 30 L16 22 L22 20 L28 22 L28 30" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".6"/>
+        </svg>
+        <h3 class="svc-name">Génie Civil</h3>
+        <p class="svc-desc">Fondations, routes d'accès, clôtures, dalles béton, canalisations et tous travaux de génie civil pour sites de télécommunications.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">08</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M10 34 Q22 8 34 34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+          <path d="M14 28 Q22 14 30 28" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".6"/>
+          <path d="M18 22 Q22 16 26 22" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none" opacity=".4"/>
+          <circle cx="22" cy="22" r="2.5" fill="currentColor"/>
+          <path d="M10 36 L34 36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+        </svg>
+        <h3 class="svc-name">Maintenance & Assistance</h3>
+        <p class="svc-desc">Maintenance préventive et corrective, assistance technique sur site, mise en service, contrôle et optimisation des performances réseau.</p>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">09</span>
+        <svg class="svc-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M22 8 L22 14 M8 22 L14 22 M30 22 L36 22 M22 30 L22 36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+          <circle cx="22" cy="22" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M15 22 Q18 16 22 14 Q26 16 29 22 Q26 28 22 30 Q18 28 15 22Z" stroke="currentColor" stroke-width="1" fill="none" opacity=".5"/>
+          <circle cx="22" cy="22" r="3.5" fill="currentColor"/>
+          <path d="M28 16 L36 8 M36 8 L32 8 M36 8 L36 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+        </svg>
+        <h3 class="svc-name">Acquisition de Sites</h3>
+        <p class="svc-desc">Identification, recherche et négociation foncière pour l'implantation de nouveaux sites — analyse technico-commerciale et conformité réglementaire.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ VALUES + VISION ════════════════ -->
+<section id="values" class="section-pad bg-navy dark-section">
+  <div class="container">
+    <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Notre ADN</span></div>
+    <h2 class="sec-h2 fu" style="margin-bottom:clamp(28px,4vw,52px)">Valeurs & Vision</h2>
+    <div class="vv-grid">
+      <div class="vv-card fu fu-d1">
+        <div class="vv-title">Nos Valeurs</div>
+        <div class="vv-list">
+          <div class="vv-item"><div class="vv-bullet"></div>Valorisation des compétences nationales et internationales</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Travailler dans un esprit d'ouverture et d'expansion</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Exécution des projets dans les règles de l'art</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Garantie de la qualité des prestations et produits offerts</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Promotion de l'intégration et de l'emploi des jeunes Algériens</div>
+        </div>
+      </div>
+      <div class="vv-card fu fu-d2">
+        <div class="vv-title">Notre Vision</div>
+        <div class="vv-list">
+          <div class="vv-item"><div class="vv-bullet"></div>Couvrir l'Algérie et contribuer à son développement numérique</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Faciliter l'accès aux technologies nouvelles à meilleur coût</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Créer un cadre d'expression des talents de la jeunesse algérienne en télécoms</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Accompagner les structures étatiques dans l'acquisition d'infrastructures</div>
+          <div class="vv-item"><div class="vv-bullet"></div>Intégrer la protection de l'environnement dans nos pratiques</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROJECTS ════════════════ -->
+<section id="projects" class="section-pad bg-white">
+  <div class="container">
+    <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Références</span></div>
+    <h2 class="sec-h2 fu" style="margin-bottom:clamp(24px,3.5vw,44px)">Nos Projets</h2>
+
+    <div class="proj-tabs fu">
+      <button class="proj-tab active" onclick="switchTab(this,'ongoing')">Projets en cours</button>
+      <button class="proj-tab" onclick="switchTab(this,'done')">Projets réalisés</button>
+    </div>
+
+    <div class="proj-panel active" id="ongoing">
+      <table class="proj-table">
+        <thead>
+          <tr><th>N°</th><th>Partenaire & Projet</th><th>Région</th><th>Période</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>
+              <span class="proj-partner">Algérie Télécom</span>
+              <div class="proj-name">Déploiement des sites radio, transmission et maintenance GC</div>
+            </td>
+            <td class="proj-region">Territoire national</td>
+            <td class="proj-region">2017 – 2022</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>
+              <span class="proj-partner">AT / Algérie Télécom</span>
+              <div class="proj-name">ODN-FTTH · F/P Pylônes</div>
+            </td>
+            <td class="proj-region">Alger · Médéa · Annaba · Tissmssilt · Souk Ahress</td>
+            <td class="proj-region">En cours</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>
+              <span class="proj-partner">ZTE · OTA · OA</span>
+              <div class="proj-name">AT/ATM – OTA – OA Projects</div>
+            </td>
+            <td class="proj-region">Territoire national</td>
+            <td class="proj-region">En cours</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="proj-panel" id="done">
+      <table class="proj-table">
+        <thead>
+          <tr><th>N°</th><th>Partenaire & Projet</th><th>Région</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>
+              <span class="proj-partner">Algérie Télécom</span>
+              <div class="proj-name">Modernisation des sites 3G – Oum El-Bouagui et Khenchela (C.W)</div>
+            </td>
+            <td class="proj-region">OEB · Khenchela</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>
+              <span class="proj-partner">Huawei / ATM</span>
+              <div class="proj-name">Algeria ATM 2G Swap & 3G New Civil Work AT (LTE) · FTTX Project</div>
+            </td>
+            <td class="proj-region">Relizane · Oran · Mustaganem · M'sila · Tissmssil · Alger · Tlemcen</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>
+              <span class="proj-partner">ZTE · Ooredoo</span>
+              <div class="proj-name">FTTx Survey & Implémentation · OTA TI Project · LTE CW+Ti+OSP · Swap Antennas & GU Ooredoo</div>
+            </td>
+            <td class="proj-region">Tiaret · Algérie · Est d'Algérie · Alger · Tipaza · Blida · Boumerdess</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>
+              <span class="proj-partner">ScadaCom</span>
+              <div class="proj-name">Génie Civil ATM Project</div>
+            </td>
+            <td class="proj-region">Batna · Médéa</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>
+              <span class="proj-partner">Alcatel-Lucent</span>
+              <div class="proj-name">MPR OTA Project</div>
+            </td>
+            <td class="proj-region">Batna</td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>
+              <span class="proj-partner">EEC Group</span>
+              <div class="proj-name">Site Survey ATM Project</div>
+            </td>
+            <td class="proj-region">Oran · Médéa · Djelfa · OEB</td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>
+              <span class="proj-partner">Algérie Télécom</span>
+              <div class="proj-name">F.O Project (canalisation)</div>
+            </td>
+            <td class="proj-region">Bordj Bou Arréridj</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PARTNERS CAROUSEL ════════════════ -->
+<section id="partners" class="section-pad bg-lightblue">
+  <div class="container">
+    <div class="sec-label fu" style="justify-content:center"><div class="sec-dot"></div><span class="sec-label-txt">Ils Nous Font Confiance</span></div>
+    <h2 class="sec-h2 fu" style="text-align:center;margin-bottom:clamp(36px,5vw,60px)">Nos Partenaires</h2>
+
+    <div class="carousel-wrap fu">
+      <button class="car-btn car-prev" aria-label="Précédent">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carTrack">
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://commons.wikimedia.org/wiki/Huawei#/media/File:Huawei_AppGallery.svg" alt="Huawei" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">HUAWEI</div>
+            </div>
+            <span class="partner-name">Huawei</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ZTE_logo.svg/320px-ZTE_logo.svg.png" alt="ZTE" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ZTE</div>
+            </div>
+            <span class="partner-name">ZTE</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Nokia_logo.svg/320px-Nokia_logo.svg.png" alt="Alcatel-Lucent" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALCATEL-LUCENT</div>
+            </div>
+            <span class="partner-name">Alcatel-Lucent</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ooredoo_logo.svg/320px-Ooredoo_logo.svg.png" alt="Ooredoo" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">OOREDOO</div>
+            </div>
+            <span class="partner-name">Ooredoo Algérie</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Alg%C3%A9rie_T%C3%A9l%C3%A9com_logo_2020.svg/320px-Alg%C3%A9rie_T%C3%A9l%C3%A9com_logo_2020.svg.png" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALGÉRIE TÉLÉCOM</div>
+            </div>
+            <span class="partner-name">Algérie Télécom</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <div class="partner-fallback" style="display:flex">SCADACOM</div>
+            </div>
+            <span class="partner-name">ScadaCom</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <div class="partner-fallback" style="display:flex">EEC GROUP</div>
+            </div>
+            <span class="partner-name">EEC Group</span>
+          </div>
+
+        </div>
+      </div>
+      <button class="car-btn car-next" aria-label="Suivant">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="carousel-dots" id="carDots"></div>
+  </div>
+</section>
+
+<!-- ════════════════ GALLERY ════════════════ -->
+<section id="gallery" class="section-pad bg-white">
+  <div class="container">
+    <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Nos Réalisations</span></div>
+    <h2 class="sec-h2 fu" style="margin-bottom:clamp(28px,4vw,52px)">Galerie de Projets</h2>
+
+    <div class="gallery-grid fu">
+      <div class="gal-item gal-large">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" alt="Tour télécom pylône" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Construction de Pylônes</div>
+      </div>
+      <div class="gal-item">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Antenne GSM site" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Sites GSM Clés en Main</div>
+      </div>
+      <div class="gal-item">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Réseau fibre optique" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Réseau Fibre Optique</div>
+      </div>
+      <div class="gal-item">
+        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80" alt="Énergie solaire shelter" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Énergie Solaire & Shelters</div>
+      </div>
+      <div class="gal-item">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Ingénieurs télécom" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Équipe Technique</div>
+      </div>
+      <div class="gal-item gal-wide">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80" alt="Transmission hertzienne microwave" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
+        <div class="gal-caption">Transmission Hertzienne</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TEAM & RESOURCES ════════════════ -->
+<section id="team" class="section-pad bg-lightblue">
+  <div class="container">
+    <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Capacité Opérationnelle</span></div>
+    <h2 class="sec-h2 fu" style="margin-bottom:clamp(28px,4vw,52px)">Moyens Humains & Matériels</h2>
+    <div class="team-grid">
+      <div class="res-block fu fu-d1">
+        <div class="res-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2 14c0-3.314 2.686-5 6-5s6 1.686 6 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Ressources Humaines
+        </div>
+        <div class="res-list">
+          <div class="res-item"><span class="res-role">Cadres Dirigeants</span><span class="res-count">03</span></div>
+          <div class="res-item"><span class="res-role">Ingénieurs Génie Civil</span><span class="res-count">04</span></div>
+          <div class="res-item"><span class="res-role">Dessinateurs</span><span class="res-count">02</span></div>
+          <div class="res-item"><span class="res-role">Ingénieurs Télécom</span><span class="res-count">03</span></div>
+          <div class="res-item"><span class="res-role">Ingénieurs Électricité</span><span class="res-count">02</span></div>
+          <div class="res-item"><span class="res-role">Négociateurs</span><span class="res-count">03</span></div>
+          <div class="res-item"><span class="res-role">Techniciens & MO</span><span class="res-count">12</span></div>
+          <div class="res-item"><span class="res-role">Suivi Qualité</span><span class="res-count">02</span></div>
+        </div>
+      </div>
+      <div class="res-block fu fu-d2">
+        <div class="res-title">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="5" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.3"/><path d="M5 5V4a3 3 0 016 0v1" stroke="currentColor" stroke-width="1.3"/></svg>
+          Moyens Matériels
+        </div>
+        <div class="res-list">
+          <div class="res-item"><span class="res-role">Camions</span><span class="res-count">04</span></div>
+          <div class="res-item"><span class="res-role">Véhicules de Terrain</span><span class="res-count">12</span></div>
+          <div class="res-item"><span class="res-role">PC Laptops</span><span class="res-count">06</span></div>
+          <div class="res-item"><span class="res-role">GPS & Boussoles</span><span class="res-count">04</span></div>
+          <div class="res-item"><span class="res-role">Smartphones</span><span class="res-count">10</span></div>
+          <div class="res-item"><span class="res-role">Caisses à outils complètes</span><span class="res-count">08</span></div>
+          <div class="res-item"><span class="res-role">Groupes électrogènes</span><span class="res-count">02</span></div>
+          <div class="res-item"><span class="res-role">Soudeurs FO + OTDR</span><span class="res-count">02</span></div>
+        </div>
+        <p class="res-note">
+          + Outillage complet : perceuses, tronçonneuses, mesureurs de terre, site master, équipements HSE, génie civil, électricité et montage pylône.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contact" class="section-pad bg-navy">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info fu">
+        <div class="sec-label"><div class="sec-dot"></div><span class="sec-label-txt dark-lbl">Nous Joindre</span></div>
+        <h2 class="sec-h2 dark-h">Parlons de Votre Projet</h2>
+        <p class="sec-p dark-p" style="margin-top:16px;margin-bottom:32px">
+          Notre équipe est disponible pour étudier votre projet, préparer un devis et vous accompagner de la phase de survey jusqu'à la mise en service.
+        </p>
+
+        <div class="contact-cards">
+          <div class="ccard">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M9 2C6.239 2 4 4.239 4 7c0 4.5 5 9 5 9s5-4.5 5-9c0-2.761-2.239-5-5-5zm0 6.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" stroke="currentColor" stroke-width="1.3"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">Adresse</div>
+              <div class="ccard-val">HAI BOUZAD ALI N°175 – Chéraga – Alger</div>
+            </div>
+          </div>
+          <div class="ccard">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M3 4a1 1 0 011-1h2l2 4.5-1.5 1a10 10 0 005 5l1-1.5L17 14v2a1 1 0 01-1 1C7.163 17 1 10.837 1 3a1 1 0 011-1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">Téléphone</div>
+              <div class="ccard-val">+213 (0) 23 228 228</div>
+            </div>
+          </div>
+          <div class="ccard">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M2 4h14v11H2V4zm0 0l7 6 7-6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">E-mail</div>
+              <div class="ccard-val">chabakatcom@yahoo.com</div>
+            </div>
+          </div>
+          <div class="ccard">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.3"/><path d="M9 4.5C7.5 6 7 7.5 7 9s.5 2.5 2 4M9 4.5c1.5 1.5 2 3 2 4.5s-.5 2.5-2 4M2.5 9h13" stroke="currentColor" stroke-width="1.1" opacity=".6"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">Site Web</div>
+              <div class="ccard-val">www.chabakatcom.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-persons">
+          <div class="person">
+            <div class="person-name">M. REBAI Djamel</div>
+            <div class="person-role">Directeur Général</div>
+            <div class="person-contacts">
+              <a href="mailto:r.djamel@chabakatcom.com">
+                <svg viewBox="0 0 14 14" fill="none"><path d="M1.5 3h11v8.5h-11V3zm0 0l5.5 4.5 5.5-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                r.djamel@chabakatcom.com
+              </a>
+              <a href="tel:+213661330733">
+                <svg viewBox="0 0 14 14" fill="none"><path d="M2 3a.8.8 0 01.8-.8h1.6l1.5 3.5-1.2.8A7.5 7.5 0 009.5 10l.8-1.2 3.5 1.5V12a.8.8 0 01-.8.8C5.4 12.8 1.2 8.6 1.2 3.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                +213 (0) 661 33 07 33
+              </a>
+            </div>
+          </div>
+          <div class="person">
+            <div class="person-name">M. HEBBACHE Mohamed</div>
+            <div class="person-role">Directeur Technique</div>
+            <div class="person-contacts">
+              <a href="mailto:m.hebbache@chabakatcom.com">
+                <svg viewBox="0 0 14 14" fill="none"><path d="M1.5 3h11v8.5h-11V3zm0 0l5.5 4.5 5.5-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                m.hebbache@chabakatcom.com
+              </a>
+              <a href="tel:+213671376360">
+                <svg viewBox="0 0 14 14" fill="none"><path d="M2 3a.8.8 0 01.8-.8h1.6l1.5 3.5-1.2.8A7.5 7.5 0 009.5 10l.8-1.2 3.5 1.5V12a.8.8 0 01-.8.8C5.4 12.8 1.2 8.6 1.2 3.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                +213 (0) 671 37 63 60
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="fu fu-d2">
+        <div class="form-box">
+          <h3 class="form-title">Demande de Devis</h3>
+          <div class="cform" id="contactForm">
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="f-nom">Nom & Prénom *</label>
+                <input id="f-nom" name="from_name" type="text" placeholder="Votre nom complet" required>
+              </div>
+              <div class="cform-group">
+                <label for="f-soc">Société</label>
+                <input id="f-soc" name="company" type="text" placeholder="Nom de votre entreprise">
               </div>
             </div>
-            <div class="col-md-2 offset-md-1">
-              <h5 class="py-3">Nos Services</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Installation de réseaux GSM </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Maintenance et réparation </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Construction d'infrastructures télécom </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Consultation et expertise </a>
-                </li>
-              </ul>
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="f-tel">Téléphone *</label>
+                <input id="f-tel" name="phone" type="tel" placeholder="+213 ..." required>
+              </div>
+              <div class="cform-group">
+                <label for="f-email">E-mail *</label>
+                <input id="f-email" name="reply_to" type="email" placeholder="vous@exemple.dz" required>
+              </div>
             </div>
-            <div class="col-md-2">
-              <h5 class="py-3">Liens Rapides</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Nos localisations </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> À propos de nous </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Notre galerie </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Politique de confidentialité </a>
-                </li>
-                <li class="nav-item mb-3">
-                  <a href="#" class="nav-link fw-normal p-0"> Contactez-nous </a>
-                </li>
-              </ul>
+            <div class="cform-group">
+              <label for="f-svc">Type de Service</label>
+              <select id="f-svc" name="service">
+                <option value="" disabled selected>Sélectionner un service…</option>
+                <option>GSM & Sites Clés en Main</option>
+                <option>Swap 2G / 3G / 4G</option>
+                <option>Transmission Hertzienne</option>
+                <option>Énergie & Shelters</option>
+                <option>Fibre Optique — FTTH/ODN</option>
+                <option>Survey & Études APS/APD</option>
+                <option>Génie Civil</option>
+                <option>Maintenance & Assistance</option>
+                <option>Acquisition de Sites</option>
+                <option>Autre</option>
+              </select>
             </div>
-            <div class="col-md-3">
-              <h5 class="py-3">Infos Contact</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item d-flex mb-3">
-                  <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
-                  <a href="#" class="nav-link p-0"> Cité Si Haouas N°A6,Ain Taya,Alger,Algérie </a>
-                </li>
-                <li class="nav-item d-flex mb-3">
-                  <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon>
-                  <a href="#" class="nav-link p-0"> (+213) 0770 277 333 </a>
-                </li>
-                <li class="nav-item d-flex mb-3">
-                    <iconify-icon class="contact-icon pe-3" icon="mdi:fax"></iconify-icon>
-                    <a href="#" class="nav-link p-0"> (+213) 023 958 610 </a>
-                  </li>
-                <li class="nav-item d-flex mb-3">
-                  <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon>
-                  <a href="#" class="nav-link p-0"> shaddad@sarlhaddad.com </a>
-                </li>
-              </ul>
+            <div class="cform-group">
+              <label for="f-wil">Wilaya / Région</label>
+              <input id="f-wil" name="region" type="text" placeholder="Ex : Alger, Oran, M'sila…">
             </div>
-          </footer>
+            <div class="cform-group">
+              <label for="f-msg">Description du Projet *</label>
+              <textarea id="f-msg" name="message" placeholder="Décrivez votre besoin, les délais et toute information utile…" required></textarea>
+            </div>
+            <button type="button" class="btn btn-crimson submit-btn" id="submitBtn" onclick="handleSubmit()">
+              <span id="btnText">Envoyer la Demande</span>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M2.5 8H13.5M9.5 4L13.5 8L9.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div id="form-msg" class="form-feedback" style="display:none"></div>
+          </div>
         </div>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
-        <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
-            <div class="col-md-6 d-flex align-items-center">
-              <p>© 2024 Sarl Haddad - Tous droits réservés</p>
-            </div>
-          </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">
+        <img src="image001.jpg" alt="CHABAKAT COM" class="logo-img logo-img-sm">
+        <div class="logo-text">
+          <span class="logo-name">CHABAKAT COM</span>
+          <span class="logo-tagline">Télécommunications · Algérie</span>
         </div>
-      </section>
-      
-    <!-- script ================================================== -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-  </body>
+      </a>
+      <p>EURL CHABAKAT COM — Réalisation et intégration de systèmes de télécommunication en Algérie depuis 2012. HAI BOUZAD ALI N°175, Chéraga, Alger.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">GSM Clés en Main</a></li>
+        <li><a href="#services">Swap 2G/3G/4G</a></li>
+        <li><a href="#services">Transmission Hertzienne</a></li>
+        <li><a href="#services">Fibre Optique FTTH</a></li>
+        <li><a href="#services">Génie Civil</a></li>
+        <li><a href="#services">Maintenance</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Entreprise</h5>
+      <ul>
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#values">Valeurs & Vision</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#partners">Partenaires</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#team">Notre Équipe</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#">Chéraga – Alger</a></li>
+        <li><a href="tel:+213023228228">+213 (0) 23 228 228</a></li>
+        <li><a href="mailto:chabakatcom@yahoo.com">chabakatcom@yahoo.com</a></li>
+        <li><a href="#">www.chabakatcom.com</a></li>
+        <li><a href="#contact">Demander un Devis</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 EURL CHABAKAT COM. Tous droits réservés.</span>
+    <div class="footer-legal">
+      <a href="#">Mentions Légales</a>
+      <a href="#">Politique de Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<a href="#hero" class="back-top" id="backTop" aria-label="Retour en haut">
+  <svg viewBox="0 0 20 20" fill="none"><path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script>
+/* ── EmailJS init ── */
+emailjs.init("YOUR_PUBLIC_KEY"); // ← Replace with your EmailJS public key
+
+/* ── Nav scroll ── */
+const nav = document.getElementById('nav');
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  nav.classList.toggle('scrolled', y > 50);
+  backTop.classList.toggle('visible', y > 400);
+}, {passive:true});
+
+/* ── Active nav link ── */
+const sections = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if(window.scrollY >= s.offsetTop - 120) cur = s.id; });
+  navAs.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#'+cur); });
+}, {passive:true});
+
+/* ── Hamburger ── */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+burger.addEventListener('click', () => {
+  const o = burger.classList.toggle('open');
+  burger.setAttribute('aria-expanded', o);
+  drawer.classList.toggle('open', o);
+  drawer.setAttribute('aria-hidden', !o);
+  document.body.style.overflow = o ? 'hidden' : '';
+});
+drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  burger.classList.remove('open');
+  drawer.classList.remove('open');
+  burger.setAttribute('aria-expanded', false);
+  drawer.setAttribute('aria-hidden', true);
+  document.body.style.overflow = '';
+}));
+document.addEventListener('click', e => {
+  if(!burger.contains(e.target) && !drawer.contains(e.target)) {
+    burger.classList.remove('open');
+    drawer.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+/* ── Scroll fade-up ── */
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); }});
+}, {threshold:.08});
+document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+/* ── Project tabs ── */
+function switchTab(btn, id) {
+  document.querySelectorAll('.proj-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.proj-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+/* ── Partners Carousel ── */
+(function(){
+  const track = document.getElementById('carTrack');
+  const dotsWrap = document.getElementById('carDots');
+  const cards = track.querySelectorAll('.partner-card');
+  let current = 0;
+  let perView = getPerView();
+  let total = Math.ceil(cards.length / perView);
+  let autoTimer;
+
+  function getPerView(){
+    if(window.innerWidth < 480) return 1;
+    if(window.innerWidth < 768) return 2;
+    if(window.innerWidth < 1024) return 3;
+    return 4;
+  }
+
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    perView = getPerView();
+    total = Math.ceil(cards.length / perView);
+    for(let i=0;i<total;i++){
+      const d = document.createElement('button');
+      d.className = 'car-dot' + (i===current?' active':'');
+      d.setAttribute('aria-label','Page '+(i+1));
+      d.addEventListener('click',()=>goTo(i));
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function goTo(idx){
+    current = (idx + total) % total;
+    const cardW = track.parentElement.offsetWidth / perView;
+    track.style.transform = `translateX(-${current * perView * cardW}px)`;
+    dotsWrap.querySelectorAll('.car-dot').forEach((d,i)=>d.classList.toggle('active',i===current));
+  }
+
+  document.querySelector('.car-prev').addEventListener('click',()=>{clearTimeout(autoTimer);goTo(current-1);startAuto();});
+  document.querySelector('.car-next').addEventListener('click',()=>{clearTimeout(autoTimer);goTo(current+1);startAuto();});
+
+  function startAuto(){ autoTimer = setTimeout(()=>{goTo(current+1);startAuto();}, 3500); }
+
+  window.addEventListener('resize',()=>{
+    perView=getPerView();
+    total=Math.ceil(cards.length/perView);
+    current=0;
+    buildDots();
+    goTo(0);
+  });
+
+  buildDots();
+  startAuto();
+})();
+
+/* ── Smooth scroll ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+/* ── Contact Form via EmailJS ── */
+async function handleSubmit() {
+  const btn = document.getElementById('submitBtn');
+  const btnText = document.getElementById('btnText');
+  const msgEl = document.getElementById('form-msg');
+
+  const name = document.getElementById('f-nom').value.trim();
+  const phone = document.getElementById('f-tel').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const message = document.getElementById('f-msg').value.trim();
+
+  if(!name || !phone || !email || !message){
+    msgEl.textContent = '⚠ Veuillez remplir tous les champs obligatoires.';
+    msgEl.className = 'form-feedback error';
+    msgEl.style.display = 'block';
+    return;
+  }
+
+  btn.disabled = true;
+  btnText.textContent = 'Envoi en cours…';
+  msgEl.style.display = 'none';
+
+  const params = {
+    from_name: name,
+    company: document.getElementById('f-soc').value,
+    phone: phone,
+    reply_to: email,
+    service: document.getElementById('f-svc').value,
+    region: document.getElementById('f-wil').value,
+    message: message,
+    to_email: 'touilabdelhalim17@gmail.com'
+  };
+
+  try {
+    // ↓ Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your EmailJS IDs
+    await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params);
+    msgEl.textContent = '✓ Votre demande a été envoyée avec succès. Nous vous contacterons sous 24h.';
+    msgEl.className = 'form-feedback success';
+    msgEl.style.display = 'block';
+    document.getElementById('contactForm').querySelectorAll('input,textarea,select').forEach(el => el.value = '');
+  } catch(err) {
+    msgEl.textContent = '✗ Une erreur s\'est produite. Veuillez réessayer ou nous contacter par téléphone.';
+    msgEl.className = 'form-feedback error';
+    msgEl.style.display = 'block';
+  } finally {
+    btn.disabled = false;
+    btnText.textContent = 'Envoyer la Demande';
+  }
+}
+</script>
+</body>
 </html>
