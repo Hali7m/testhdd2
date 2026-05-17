@@ -13,16 +13,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-
+<br><br>
 <!-- ════════════════ NAV ════════════════ -->
 <nav id="nav">
-  <a href="#hero" class="nav-logo">
-    <img src="image001.jpg" alt="CHABAKAT COM Logo" class="logo-img">
-    <div class="logo-text">
-      <span class="logo-name">EURL CHABAKAT COM</span>
-      <span class="logo-tagline">Télécommunications · Algérie</span>
-    </div>
-  </a>
+<a href="#hero" class="nav-logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+  <img src="image001.png" alt="CHABAKAT COM Logo" class="logo-img" style="height: 35px; width: auto; object-fit: contain;">
+  
+  <div class="logo-text" style="display: flex; flex-direction: column; justify-content: center; line-height: 1.1;">
+    <span class="logo-name" >EURL CHABAKAT COM</span>
+    <span class="logo-tagline" style="font-size: 0.7rem; opacity: 0.8;">Télécommunications · Algérie</span>
+  </div>
+</a>
 
   <ul class="nav-links">
     <li><a href="#hero" class="active">Accueil</a></li>
@@ -56,7 +57,7 @@
 <section id="hero">
   <div class="hero-bg">
     <img src="hero.png" alt="Infrastructure télécom" class="hero-photo">
-    <div class="hero-overlay"></div>
+    <div class="hero-veil"></div>
   </div>
 
   <div class="hero-content">
@@ -64,7 +65,7 @@
       <div class="eyebrow-bar"></div>
       <span class="eyebrow-txt">Fondé en 2012 · Alger · Algérie</span>
     </div>
-    <h1 class="hero-h1">Solutions<br><em>Télécoms</em><br>Clés en Main</h1>
+    <h1 class="hero-h1">Solutions<br><em style="color: #8B1A1A;">Télécoms</em><br>Clés en Main</h1>
     <p class="hero-p">
       EURL CHABAKAT COM réalise et intègre des systèmes de télécommunication sur l'ensemble du territoire algérien — de la construction de pylônes au déploiement FTTH, en passant par la fibre optique et les faisceaux hertziens.
     </p>
@@ -95,14 +96,14 @@
       <span class="stat-l">Partenaires majeurs</span>
     </div>
     <div class="stat">
-      <span class="stat-n">48</span>
+      <span class="stat-n">69</span>
       <span class="stat-l">Wilayas couvertes</span>
     </div>
   </div>
 </section>
 
 <!-- ════════════════ ABOUT ════════════════ -->
-<section id="about" class="section-pad bg-white">
+<section id="about" class="section-pad bg-lightblue">
   <div class="container">
     <div class="about-grid">
 
@@ -121,7 +122,7 @@
         </div>
       </div>
 
-      <div class="about-text fu fu-d2">
+      <div class="about-text fu fu-d2 ">
         <div class="sec-label"><div class="sec-dot"></div><span class="sec-label-txt">À Propos de Nous</span></div>
         <h2 class="sec-h2">L'Ingénierie au Cœur de la Connectivité Algérienne</h2>
         <p class="sec-p" style="margin-top:18px">
@@ -169,7 +170,7 @@
         <div class="sec-label"><div class="sec-dot"></div><span class="sec-label-txt">Domaines d'Intervention</span></div>
         <h2 class="sec-h2">Nos Services</h2>
       </div>
-      <a href="#contact" class="btn btn-royal" style="margin-top:auto">Demander un Devis</a>
+      <a href="#contact" class="btn btn-crimson" style="margin-top:auto">Demander un Devis</a>
     </div>
     <div class="services-grid fu fu-d1">
 
@@ -319,7 +320,7 @@
 </section>
 
 <!-- ════════════════ PROJECTS ════════════════ -->
-<section id="projects" class="section-pad bg-white">
+<section id="projects" class="section-pad bg-lightblue">
   <div class="container">
     <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Références</span></div>
     <h2 class="sec-h2 fu" style="margin-bottom:clamp(24px,3.5vw,44px)">Nos Projets</h2>
@@ -437,8 +438,8 @@
 <!-- ════════════════ PARTNERS CAROUSEL ════════════════ -->
 <section id="partners" class="section-pad bg-lightblue">
   <div class="container">
-    <div class="sec-label fu" style="justify-content:center"><div class="sec-dot"></div><span class="sec-label-txt">Ils Nous Font Confiance</span></div>
-    <h2 class="sec-h2 fu" style="text-align:center;margin-bottom:clamp(36px,5vw,60px)">Nos Partenaires</h2>
+    <div class="sec-label fu" style="justify-content:left"><div class="sec-dot"></div><span class="sec-label-txt">Ils Nous Font Confiance</span></div>
+    <h2 class="sec-h2 fu" style="text-align:left;margin-bottom:clamp(36px,5vw,60px)">Nos Partenaires</h2>
 
     <div class="carousel-wrap fu">
       <button class="car-btn car-prev" aria-label="Précédent">
@@ -449,7 +450,15 @@
 
           <div class="partner-card">
             <div class="partner-logo-wrap">
-              <img src="https://commons.wikimedia.org/wiki/Huawei#/media/File:Huawei_AppGallery.svg" alt="Huawei" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ooredoo1.svg/960px-Ooredoo1.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20140801084003" alt="Ooredoo" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">OOREDOO</div>
+            </div>
+            <span class="partner-name">Ooredoo Algérie</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.huawei.com/-/media/hcomponent-header/1.0.1.20260424171441/component/img/huawei_logo.png" alt="Huawei" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="partner-fallback" style="display:none">HUAWEI</div>
             </div>
             <span class="partner-name">Huawei</span>
@@ -457,7 +466,15 @@
 
           <div class="partner-card">
             <div class="partner-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ZTE_logo.svg/320px-ZTE_logo.svg.png" alt="ZTE" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="https://www.algerietelecom.dz/assets/front/img/logo.svg" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALGÉRIE TÉLÉCOM</div>
+            </div>
+            <span class="partner-name">Algérie Télécom</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/ZTE_logo.svg/1280px-ZTE_logo.svg.png" alt="ZTE" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="partner-fallback" style="display:none">ZTE</div>
             </div>
             <span class="partner-name">ZTE</span>
@@ -465,7 +482,7 @@
 
           <div class="partner-card">
             <div class="partner-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Nokia_logo.svg/320px-Nokia_logo.svg.png" alt="Alcatel-Lucent" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alcatel-Lucent_logo.svg/960px-Alcatel-Lucent_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20160501020205" alt="Alcatel-Lucent" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="partner-fallback" style="display:none">ALCATEL-LUCENT</div>
             </div>
             <span class="partner-name">Alcatel-Lucent</span>
@@ -473,33 +490,129 @@
 
           <div class="partner-card">
             <div class="partner-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ooredoo_logo.svg/320px-Ooredoo_logo.svg.png" alt="Ooredoo" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="partner-fallback" style="display:none">OOREDOO</div>
-            </div>
-            <span class="partner-name">Ooredoo Algérie</span>
-          </div>
-
-          <div class="partner-card">
-            <div class="partner-logo-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Alg%C3%A9rie_T%C3%A9l%C3%A9com_logo_2020.svg/320px-Alg%C3%A9rie_T%C3%A9l%C3%A9com_logo_2020.svg.png" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="partner-fallback" style="display:none">ALGÉRIE TÉLÉCOM</div>
-            </div>
-            <span class="partner-name">Algérie Télécom</span>
-          </div>
-
-          <div class="partner-card">
-            <div class="partner-logo-wrap">
-              <div class="partner-fallback" style="display:flex">SCADACOM</div>
+              <img src="https://cdn.prod.website-files.com/68657ab9fe2b14cb1e9d9e10/686ee2918108086c5f4d1017_SCADACOM.png" alt="SCADACOM" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none"></div>
             </div>
             <span class="partner-name">ScadaCom</span>
           </div>
 
           <div class="partner-card">
             <div class="partner-logo-wrap">
-              <div class="partner-fallback" style="display:flex">EEC GROUP</div>
+              <img src="https://www.rightangle.com.eg/web/image/1879-c491738d/eec.webp" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">EEC GROUP</div>
             </div>
             <span class="partner-name">EEC Group</span>
           </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ooredoo1.svg/960px-Ooredoo1.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20140801084003" alt="Ooredoo" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">OOREDOO</div>
+            </div>
+            <span class="partner-name">Ooredoo Algérie</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.huawei.com/-/media/hcomponent-header/1.0.1.20260424171441/component/img/huawei_logo.png" alt="Huawei" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">HUAWEI</div>
+            </div>
+            <span class="partner-name">Huawei</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.algerietelecom.dz/assets/front/img/logo.svg" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALGÉRIE TÉLÉCOM</div>
+            </div>
+            <span class="partner-name">Algérie Télécom</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/ZTE_logo.svg/1280px-ZTE_logo.svg.png" alt="ZTE" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ZTE</div>
+            </div>
+            <span class="partner-name">ZTE</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alcatel-Lucent_logo.svg/960px-Alcatel-Lucent_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20160501020205" alt="Alcatel-Lucent" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALCATEL-LUCENT</div>
+            </div>
+            <span class="partner-name">Alcatel-Lucent</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://cdn.prod.website-files.com/68657ab9fe2b14cb1e9d9e10/686ee2918108086c5f4d1017_SCADACOM.png" alt="SCADACOM" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none"></div>
+            </div>
+            <span class="partner-name">ScadaCom</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.rightangle.com.eg/web/image/1879-c491738d/eec.webp" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">EEC GROUP</div>
+            </div>
+            <span class="partner-name">EEC Group</span>
+          </div><div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ooredoo1.svg/960px-Ooredoo1.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20140801084003" alt="Ooredoo" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">OOREDOO</div>
+            </div>
+            <span class="partner-name">Ooredoo Algérie</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.huawei.com/-/media/hcomponent-header/1.0.1.20260424171441/component/img/huawei_logo.png" alt="Huawei" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">HUAWEI</div>
+            </div>
+            <span class="partner-name">Huawei</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.algerietelecom.dz/assets/front/img/logo.svg" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALGÉRIE TÉLÉCOM</div>
+            </div>
+            <span class="partner-name">Algérie Télécom</span>
+          </div>          
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/ZTE_logo.svg/1280px-ZTE_logo.svg.png" alt="ZTE" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ZTE</div>
+            </div>
+            <span class="partner-name">ZTE</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alcatel-Lucent_logo.svg/960px-Alcatel-Lucent_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20160501020205" alt="Alcatel-Lucent" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">ALCATEL-LUCENT</div>
+            </div>
+            <span class="partner-name">Alcatel-Lucent</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://cdn.prod.website-files.com/68657ab9fe2b14cb1e9d9e10/686ee2918108086c5f4d1017_SCADACOM.png" alt="SCADACOM" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none"></div>
+            </div>
+            <span class="partner-name">ScadaCom</span>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-logo-wrap">
+              <img src="https://www.rightangle.com.eg/web/image/1879-c491738d/eec.webp" alt="Algérie Télécom" class="partner-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="partner-fallback" style="display:none">EEC GROUP</div>
+            </div>
+            <span class="partner-name">EEC Group</span>
+          </div>          
 
         </div>
       </div>
@@ -513,7 +626,7 @@
 </section>
 
 <!-- ════════════════ GALLERY ════════════════ -->
-<section id="gallery" class="section-pad bg-white">
+<section id="gallery" class="section-pad bg-lightblue">
   <div class="container">
     <div class="sec-label fu"><div class="sec-dot"></div><span class="sec-label-txt">Nos Réalisations</span></div>
     <h2 class="sec-h2 fu" style="margin-bottom:clamp(28px,4vw,52px)">Galerie de Projets</h2>
@@ -539,7 +652,7 @@
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Ingénieurs télécom" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
         <div class="gal-caption">Équipe Technique</div>
       </div>
-      <div class="gal-item gal-wide">
+      <div class="gal-item gal-large">
         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80" alt="Transmission hertzienne microwave" loading="lazy" onerror="this.parentElement.classList.add('gal-error')">
         <div class="gal-caption">Transmission Hertzienne</div>
       </div>
@@ -611,7 +724,7 @@
             </div>
             <div>
               <div class="ccard-label">Adresse</div>
-              <div class="ccard-val">HAI BOUZAD ALI N°175 – Chéraga – Alger</div>
+              <div class="ccard-val">HAI BOUZAD ALI N°175 – Chéraga – Alger, Algérie</div>
             </div>
           </div>
           <div class="ccard">
@@ -635,10 +748,6 @@
           <div class="ccard">
             <div class="ccard-icon">
               <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.3"/><path d="M9 4.5C7.5 6 7 7.5 7 9s.5 2.5 2 4M9 4.5c1.5 1.5 2 3 2 4.5s-.5 2.5-2 4M2.5 9h13" stroke="currentColor" stroke-width="1.1" opacity=".6"/></svg>
-            </div>
-            <div>
-              <div class="ccard-label">Site Web</div>
-              <div class="ccard-val">www.chabakatcom.com</div>
             </div>
           </div>
         </div>
@@ -677,8 +786,8 @@
 
       <!-- Form -->
       <div class="fu fu-d2">
-        <div class="form-box">
-          <h3 class="form-title">Demande de Devis</h3>
+        <div style="background:rgba(255,255,255,.03);border:1px solid var(--b06);padding:clamp(24px,3.5vw,44px)">          
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,3vw,32px);color:var(--w);letter-spacing:1px;margin-bottom:24px">Demande de Devis</h3>          
           <div class="cform" id="contactForm">
             <div class="cform-row">
               <div class="cform-group">
@@ -741,7 +850,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="#hero" class="nav-logo">
-        <img src="image001.jpg" alt="CHABAKAT COM" class="logo-img logo-img-sm">
+        <img src="image001.png" alt="CHABAKAT COM Logo" class="logo-img" style="height: 35px; width: auto; ">
         <div class="logo-text">
           <span class="logo-name">CHABAKAT COM</span>
           <span class="logo-tagline">Télécommunications · Algérie</span>
@@ -795,9 +904,10 @@
   </div>
 </footer>
 
-<!-- Back to top -->
-<a href="#hero" class="back-top" id="backTop" aria-label="Retour en haut">
-  <svg viewBox="0 0 20 20" fill="none"><path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<a href="#hero" class="back-top" id="backTop" aria-label="Retour en haut" style="position: fixed; bottom: 20px; right: 20px; width: 40px; height: 40px; background: #0F2057; color: #ffffff; display: flex; align-items: center; justify-content: center; border-radius: 50%; z-index: 999; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+  <svg viewBox="0 0 20 20" fill="none" style="width: 20px; height: 20px;">
+    <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
 </a>
 
 <script>
@@ -862,13 +972,15 @@ function switchTab(btn, id) {
 }
 
 /* ── Partners Carousel ── */
+/* ── Partners Carousel ── */
 (function(){
   const track = document.getElementById('carTrack');
   const dotsWrap = document.getElementById('carDots');
   const cards = track.querySelectorAll('.partner-card');
   let current = 0;
   let perView = getPerView();
-  let total = Math.ceil(cards.length / perView);
+  // Maximum index we can slide to before showing blank space
+  let maxIndex = Math.max(0, cards.length - perView);
   let autoTimer;
 
   function getPerView(){
@@ -881,36 +993,69 @@ function switchTab(btn, id) {
   function buildDots(){
     dotsWrap.innerHTML = '';
     perView = getPerView();
-    total = Math.ceil(cards.length / perView);
-    for(let i=0;i<total;i++){
+    maxIndex = Math.max(0, cards.length - perView);
+    
+    // Create a dot for each logical view position
+    for(let i = 0; i <= maxIndex; i++){
       const d = document.createElement('button');
-      d.className = 'car-dot' + (i===current?' active':'');
-      d.setAttribute('aria-label','Page '+(i+1));
-      d.addEventListener('click',()=>goTo(i));
+      d.className = 'car-dot' + (i === current ? ' active' : '');
+      d.setAttribute('aria-label', 'Page ' + (i + 1));
+      d.addEventListener('click', () => {
+        clearTimeout(autoTimer);
+        goTo(i);
+        startAuto();
+      });
       dotsWrap.appendChild(d);
     }
   }
 
   function goTo(idx){
-    current = (idx + total) % total;
-    const cardW = track.parentElement.offsetWidth / perView;
-    track.style.transform = `translateX(-${current * perView * cardW}px)`;
-    dotsWrap.querySelectorAll('.car-dot').forEach((d,i)=>d.classList.toggle('active',i===current));
+    perView = getPerView();
+    maxIndex = Math.max(0, cards.length - perView);
+
+    // Loop logic: if we go past max, return to 0. If we go below 0, jump to max.
+    if (idx > maxIndex) {
+      current = 0;
+    } else if (idx < 0) {
+      current = maxIndex;
+    } else {
+      current = idx;
+    }
+
+    // Move by percentage based on the number of visible items
+    const movePercentage = current * (100 / perView);
+    track.style.transform = `translateX(-${movePercentage}%)`;
+    
+    // Update dots highlights safely
+    const dots = dotsWrap.querySelectorAll('.car-dot');
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
-  document.querySelector('.car-prev').addEventListener('click',()=>{clearTimeout(autoTimer);goTo(current-1);startAuto();});
-  document.querySelector('.car-next').addEventListener('click',()=>{clearTimeout(autoTimer);goTo(current+1);startAuto();});
+  document.querySelector('.car-prev').addEventListener('click', () => {
+    clearTimeout(autoTimer);
+    goTo(current - 1);
+    startAuto();
+  });
 
-  function startAuto(){ autoTimer = setTimeout(()=>{goTo(current+1);startAuto();}, 3500); }
+  document.querySelector('.car-next').addEventListener('click', () => {
+    clearTimeout(autoTimer);
+    goTo(current + 1);
+    startAuto();
+  });
 
-  window.addEventListener('resize',()=>{
-    perView=getPerView();
-    total=Math.ceil(cards.length/perView);
-    current=0;
+  function startAuto(){ 
+    autoTimer = setTimeout(() => {
+      goTo(current + 1);
+      startAuto();
+    }, 1500); 
+  }
+
+  window.addEventListener('resize', () => {
     buildDots();
     goTo(0);
   });
 
+  // Initialize
   buildDots();
   startAuto();
 })();
@@ -973,5 +1118,6 @@ async function handleSubmit() {
   }
 }
 </script>
+
 </body>
 </html>
