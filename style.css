@@ -211,7 +211,7 @@ section{width:100%}
 .fu-d1{transition-delay:.1s}.fu-d2{transition-delay:.2s}.fu-d3{transition-delay:.3s}.fu-d4{transition-delay:.4s}
 
 /* ═══════════════════ ABOUT ═══════════════════ */
-#about{background:var(--white)}
+#about{background:var(--blue-light)}
 .about-grid{
   display:grid;grid-template-columns:1fr 1fr;
   gap:clamp(36px,6vw,80px);align-items:center
@@ -424,4 +424,158 @@ footer{background:#080F2A;padding:clamp(40px,5vw,60px) clamp(16px,5vw,60px) clam
   .proj-table td,.proj-table th{padding:10px 12px}
   .proj-table td:first-child{display:none}
   .about-badge{position:static;display:inline-block;margin-top:14px}
+}
+/* Empêcher le tableau de briser la mise en page sur mobile */
+.proj-panel {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.proj-table {
+  min-width: 600px; /* Force une largeur minimale pour garder le tableau lisible en scroll horizontal */
+  width: 100%;
+}
+/* 1. Ensure every logo card shares the exact same grid/flex space */
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* 2. Create a uniform boundary for the logo container */
+.partner-logo-wrap {
+  width: 100%;         /* Spans the width of the card */
+  height: 80px;        /* 🎯 Forces every logo area to have the exact same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px; /* Space between logo and text */
+  border-radius: 6px;  /* Optional: rounds the backdrop corners */
+  padding: 10px;       /* Keeps logos from touching the very edge */
+  box-sizing: border-box;
+}
+
+/* 3. Standardize the image behavior inside the container */
+.partner-logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  /* 🎯 Crucial: prevents stretching; fits any aspect ratio beautifully */
+  object-fit: contain; 
+}
+
+/* 4. Fix fallback text boxes to match the exact same size */
+.partner-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #555;
+}
+.carousel-viewport {
+  overflow: hidden; /* Hides elements waiting in queue */
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out; /* Makes the slide smooth */
+  width: 100%;
+}
+
+.partner-card {
+  flex: 0 0 25%; /* Default for 4 items per view (100% / 4) */
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments matching the JS break points */
+@media (max-width: 1023px) { .partner-card { flex: 0 0 33.333%; } }
+@media (max-width: 767px)  { .partner-card { flex: 0 0 50%; } }
+@media (max-width: 479px)  { .partner-card { flex: 0 0 100%; } }
+
+
+
+
+
+/* ==========================================================================
+   ── GALLERY GRID LAYOUT 
+   ========================================================================== */
+.gallery-grid {
+  display: grid;
+  /* Configures a clean 3-column system that wraps naturally */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  grid-auto-flow: dense; /* Instructs the browser to fill grid gaps automatically */
+  width: 100%;
+}
+
+.gal-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 250px; /* Forces all standard gallery slots to share equal height */
+  background: var(--blue-deep);
+}
+
+/* Fixes the wide card structural allocation */
+.gal-item.gal-wide {
+  grid-column: span 2;
+}
+
+.gal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents raw image files from getting squished/warped */
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gal-item:hover img {
+  transform: scale(1.06); /* Adds a premium interactive zoom on hover */
+}
+
+/* Image label text styles */
+.gal-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(15, 32, 87, 0.85));
+  padding: 24px 16px 12px;
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Invisible block fallback if an Unsplash file breaks or fails to download */
+.gal-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-mid);
+}
+.gal-error::before {
+  content: "📷 Image en cours de chargement...";
+  color: var(--txt-soft);
+  font-size: 13px;
+}
+.gal-error img {
+  display: none !important;
+}
+
+/* Mobile responsive tracks override */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Switch to a safe 1-column layout on phones */
+  }
+  .gal-item.gal-wide {
+    grid-column: span 1; /* Turn off double width spanning on small viewports */
+  }
 }
